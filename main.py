@@ -3,9 +3,7 @@ from langchain_core.messages import AIMessage, HumanMessage
 from langchain_community.document_loaders import WebBaseLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
-import langchain
-from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.llms.openai import ChatOpenAI
+from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 
 from dotenv import load_dotenv
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
